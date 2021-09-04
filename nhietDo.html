@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature {
+      constructor(C) {
+          this.C = C;
+      }
+      getCtoF(){
+          return this.C * 1.8 + 32;
+      }
+      getCtoKelvin(){
+          return this.C + 273.15;
+      }
+  }
+  let nhietDo = new Temperature(28);
+  alert(nhietDo.C+ " độ C = "+nhietDo.getCtoF()+" độ F");
+</script>
+</body>
+</html>
